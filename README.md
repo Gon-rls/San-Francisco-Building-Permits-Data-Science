@@ -1,8 +1,11 @@
 # San-Francisco-Building-Permits-Data-Science
 Análisis exploratorio y modelado predictivo de permisos de construcción de San Francisco para estudiar tiempos de tramitación, días óptimos de visita y tendencias de desarrollo urbano.
 
+
+
 San Francisco Building Permits — Exploratory Data Analysis
-Descripción
+
+# Descripción
 
 Este proyecto realiza un Análisis Exploratorio de Datos (EDA) sobre permisos de construcción de la ciudad de San Francisco.
 
