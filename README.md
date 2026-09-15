@@ -1,40 +1,68 @@
-# San-Francisco-Building-Permits-Data-Science
-Análisis exploratorio y modelado predictivo de permisos de construcción de San Francisco para estudiar tiempos de tramitación, días óptimos de visita y tendencias de desarrollo urbano.
+Ciencia de Datos para permisos de construcción en San Francisco
+Análisis exploratorio de permisos de construcción
 
+Este proyecto presenta un análisis exploratorio de datos sobre los permisos de construcción registrados en la ciudad de San Francisco.
 
+El objetivo es explorar y comprender las características de los permisos, identificar patrones en su distribución, analizar las variables disponibles y estudiar cómo se relacionan factores como el tipo de permiso, el coste estimado, la fecha y la ubicación con la actividad de construcción en la ciudad.
 
-San Francisco Building Permits — Exploratory Data Analysis
+El proyecto se centra en la limpieza, preparación, exploración y visualización de los datos como base para futuros análisis más avanzados.
 
-# Descripción
+Descripción del proyecto
 
-Este proyecto realiza un Análisis Exploratorio de Datos (EDA) sobre permisos de construcción de la ciudad de San Francisco.
+El conjunto de datos contiene información sobre permisos de construcción emitidos en San Francisco, incluyendo variables relacionadas con:
 
-El objetivo es conocer mejor los datos antes de realizar análisis más avanzados y descubrir posibles patrones relacionados con los permisos de construcción.
+Tipo de permiso.
+Fechas de creación y finalización.
+Coste estimado de los proyectos.
+Estado del permiso.
+Distrito y ubicación geográfica.
+Información relacionada con el desarrollo de los proyectos.
 
-Durante el proyecto se han realizado diferentes etapas:
+A lo largo del proyecto se realiza un proceso completo de análisis exploratorio para comprender la estructura y calidad de los datos antes de extraer conclusiones.
 
-Carga y exploración inicial de los datos utilizando Pandas.
-Revisión de la estructura del dataset y de los tipos de datos.
-Identificación y análisis de valores faltantes (NULL).
-Eliminación de columnas con una cantidad muy elevada de datos faltantes.
+Proceso de análisis
+
+El proyecto se ha desarrollado siguiendo las siguientes etapas:
+
+1. Carga y exploración inicial
+Carga del conjunto de datos utilizando Pandas.
+Revisión de la estructura y dimensiones del dataset.
+Análisis de los tipos de datos.
+Exploración inicial de las variables disponibles.
+2. Limpieza y preparación de los datos
+Identificación y análisis de valores faltantes.
+Eliminación de variables con un porcentaje elevado de valores nulos.
 Tratamiento de valores faltantes mediante diferentes estrategias según el tipo de variable.
-Análisis de variables numéricas mediante histogramas y boxplots.
+Preparación de variables para facilitar su posterior análisis.
+3. Análisis exploratorio
+
+Se estudian las principales características del conjunto de datos mediante diferentes técnicas de análisis y visualización:
+
+Distribución de variables numéricas mediante histogramas y boxplots.
 Análisis de variables categóricas mediante gráficos de frecuencia.
-Estudio de las relaciones entre variables numéricas mediante una matriz de correlación.
-Análisis de los costes de los permisos según su tipo.
-Análisis de la distribución de los permisos según el día de la semana.
-Visualización de la ubicación de los permisos mediante sus coordenadas geográficas.
-Creación de un mapa interactivo de San Francisco utilizando Folium.
+Estudio de posibles valores atípicos.
+Análisis de las relaciones entre variables numéricas mediante una matriz de correlación.
+Estudio de los costes estimados según el tipo de permiso.
+Análisis de la distribución temporal de los permisos según el día de la semana.
+4. Análisis geográfico
 
-Este análisis permite obtener una primera visión de cómo se distribuyen los permisos, qué características presentan los datos y dónde se concentra la actividad de construcción.
+La información geográfica disponible permite estudiar la distribución espacial de los permisos.
 
-Preguntas del proyecto
+Para ello se utilizan las coordenadas de los registros y se crea un mapa interactivo con Folium que permite visualizar las zonas donde se concentra la actividad relacionada con los permisos de construcción.
 
-El análisis forma parte de un proyecto de Ciencia de Datos que busca responder posteriormente a tres preguntas principales:
+Preguntas de análisis
 
-¿Es posible predecir el tiempo necesario para tramitar un permiso según su tipo y otras características?
-¿Qué día de la semana podría ser más conveniente para visitar el Department of Building Inspections según los datos disponibles?
-¿Qué información sobre el desarrollo de la ciudad de San Francisco podemos obtener a partir de los permisos de construcción?
+A través del análisis exploratorio se busca investigar cuestiones como:
+
+¿Cómo se distribuyen los permisos de construcción en la ciudad?
+¿Qué tipos de permisos aparecen con mayor frecuencia?
+¿Existen diferencias en el coste estimado según el tipo de permiso?
+¿Cómo se distribuyen los permisos a lo largo de la semana?
+¿En qué zonas de San Francisco se concentra una mayor actividad de construcción?
+¿Qué patrones pueden identificarse a partir de las variables disponibles?
+
+El análisis realizado permite establecer una base para futuros estudios relacionados con los tiempos de tramitación y otros factores asociados a los permisos de construcción.
+
 Tecnologías utilizadas
 Python
 Pandas
@@ -43,8 +71,40 @@ Matplotlib
 Seaborn
 Folium
 Google Colab
-Estado del proyecto
 
-Actualmente el proyecto se encuentra en la fase de Exploratory Data Analysis (EDA) y preparación de los datos.
+Principales áreas analizadas
 
-El siguiente paso será profundizar en el análisis de las variables y utilizar los datos preparados para estudiar los tiempos de tramitación y desarrollar modelos predictivos.
+El proyecto combina diferentes perspectivas para obtener una visión general de los datos:
+
+Calidad de los datos
+Análisis de valores faltantes, tipos de variables y preparación del dataset.
+
+Distribución de los permisos
+Estudio de las variables numéricas y categóricas para identificar patrones y comportamientos relevantes.
+
+Coste estimado
+Análisis de las diferencias en el coste de los proyectos según las características de los permisos.
+
+Componente temporal
+Exploración de la distribución de permisos según diferentes variables relacionadas con las fechas.
+
+Componente geográfico
+Visualización de la localización de los permisos mediante coordenadas y un mapa interactivo de San Francisco.
+
+Posibles siguientes pasos
+
+El análisis exploratorio realizado permite preparar el conjunto de datos para futuras fases del proyecto.
+
+Algunas posibles líneas de continuación son:
+
+Análisis más detallado de los tiempos de tramitación.
+Creación de nuevas variables a partir de la información temporal.
+Estudio de los factores que pueden estar relacionados con la duración de los permisos.
+Desarrollo de modelos predictivos para estimar el tiempo de tramitación.
+El Estado del proyecto
+
+Completado: Análisis Exploratorio de Datos (EDA)
+
+El proyecto incluye las fases de exploración, limpieza, tratamiento de valores faltantes, análisis estadístico y visualización de los permisos de construcción.
+
+El trabajo actual proporciona una base preparada para continuar profundizando en el análisis y desarrollar futuras extensiones del proyecto
